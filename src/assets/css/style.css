@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/**
+051923
+003554
+006494
+0582CA
+00A6FB
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    letter-spacing: 0.2;
+    box-sizing: border-box;
+    background-color: #00A6FB;
+}
+
+
+/* ============= CSS ON HEADER ============= */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    margin: 0;
+    background-color: #003554;
+    color: #00A6FB;
+    z-index: 2;
+}
+
+.header h1 {
+    width: 100px;
+    margin: 0 50px;
+}
+
+.nav a {
+    color: #00A6FB;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #FFF;
+    font-weight: bold;
+}
+
+.nav--header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* ============= CSS ON MAIN ============= */
+
+.section {
+    position: fixed;
+    top: 56px;
+    width: 200px;
+    height: 100%;
+    background-color: #051923;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+.nav--section {
+    color: #00A6FB;
+}
+
+.nav--section a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #00A6FB;
+}
+
+.main {
+    margin-top: 56px;
+    margin-left: 250px;
+}
+
+
+/* ============= CSS ON CAROUSSEL  ============= */
+.carousel {
+    padding: 20px 0;
+    width: 90%;
+    height: 40%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.carousel img {
+    margin-right: 20px;
+    width: 300px;
+    height: 150px;
+}
+
+.list-collapse {
+    display: flex;
+    justify-content: center;
+}
+
+.bloc {
+    display: none;
+    overflow-y: scroll;
+    width: calc(400px - (18px + 18px));
+    height: 200px;
+    background-color: white;
+    padding: 0 18px;
+}
+
+
+.collapsible {
+    margin-top: 50px;
+    width: 400px;
+    height: 60px;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: right;
+    outline: none;
+}
+
+.collapsible img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+}
+
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+button {
+    font-family: 'Poppins';
+}
