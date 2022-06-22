@@ -19,6 +19,10 @@ body {
     background-color: #00A6FB;
 }
 
+button {
+    font-family: 'Poppins';
+}
+
 
 /* ============= CSS ON HEADER ============= */
 .header {
@@ -105,7 +109,7 @@ body {
 
 .list-collapse {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .bloc {
@@ -140,8 +144,4 @@ body {
 .active,
 .collapsible:hover {
     background-color: #ccc;
-}
-
-button {
-    font-family: 'Poppins';
 }
