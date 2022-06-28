@@ -8,6 +8,9 @@
 00A6FB
 */
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -15,7 +18,6 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
     letter-spacing: 0.2;
-    box-sizing: border-box;
     background-color: #00A6FB;
 }
 
@@ -55,9 +57,10 @@ button {
 .nav a:hover {
     color: #FFF;
     font-weight: bold;
+    transition: 0.5s;
 }
 
-.nav--header {
+.nav-header {
     display: flex;
     justify-content: space-evenly;
 }
@@ -65,38 +68,43 @@ button {
 
 /* ============= CSS ON MAIN ============= */
 
-.section {
-    position: fixed;
-    top: 56px;
+.sidebar {
     width: 200px;
-    height: 100%;
     background-color: #051923;
-    margin-right: 20px;
+    padding: 40px;
+    position: relative;
     z-index: 1;
 }
 
-.nav--section {
+.nav-sidebar {
     color: #00A6FB;
 }
 
-.nav--section a {
+.nav-sidebar a {
     display: block;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     color: #00A6FB;
 }
 
-.main {
+.body {
     margin-top: 56px;
-    margin-left: 250px;
+    display: flex;
 }
 
+.main {
+    width: calc(100% - 200px);
+    position: relative;
+    margin: 20px;
+}
 
-/* ============= CSS ON CAROUSSEL  ============= */
+.container {
+    margin: 20px auto;
+    max-width: 940px;
+}
+
 .carousel {
-    padding: 20px 0;
-    width: 90%;
-    height: 40%;
     overflow: auto;
     white-space: nowrap;
 }
@@ -107,21 +115,25 @@ button {
     height: 300px;
 }
 
+
 .list-collapse {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+
 
 .bloc {
     display: none;
+    width: 400px;
     overflow-y: scroll;
-    width: calc(400px - (18px + 18px));
     height: 200px;
     background-color: white;
-    padding: 0 18px;
-    margin-bottom: 20px;
 }
 
+
+.bloc-collapse {
+    margin-bottom: 40px;
+}
 
 .collapsible {
     margin-top: 50px;
