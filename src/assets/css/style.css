@@ -43,9 +43,16 @@ button {
     z-index: 2;
 }
 
-.header h1 {
+.header-title {
     width: 100px;
     margin: 0 50px;
+    transition: .5s ease-out;
+
+}
+
+.header-title:hover {
+    color: #FFF;
+    transform: scale(1.5);
 }
 
 .nav a {
