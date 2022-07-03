@@ -73,8 +73,6 @@ button {
 }
 
 
-/* ============= CSS ON MAIN ============= */
-
 .sidebar {
     width: 200px;
     background-color: #051923;
@@ -111,6 +109,16 @@ button {
     max-width: 940px;
 }
 
+.carousel-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-button {
+    height: 300px;
+    margin-left: 20px;
+}
+
 .carousel {
     overflow: auto;
     white-space: nowrap;
@@ -126,12 +134,13 @@ button {
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
+    background: #006494;
     box-shadow: inset 0 0 6px rgba(5, 25, 35, 1);
     border-radius: 30px;
 }
 
 .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #006494;
+    background: #FFF;
 }
 
 
@@ -139,6 +148,11 @@ button {
     margin-right: 20px;
     width: 300px;
     height: 300px;
+}
+
+
+.bloc-collapse {
+    margin-right: 20px;
 }
 
 
@@ -152,8 +166,12 @@ button {
     transition: .5s;
     width: 400px;
     overflow-y: scroll;
-    height: 200px;
+    height: 0px;
     background-color: white;
+}
+
+.bloc-one {
+    overflow-y: hidden;
 }
 
 .collapsible {
@@ -178,4 +196,59 @@ button {
 .active,
 .collapsible:hover {
     background-color: #006494;
+}
+
+.inline-bloc {
+    width: 100%;
+    height: 40px;
+    border-bottom: #003554 solid 3px;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .header-title {
+        width: 50px;
+        margin: 0 30px;
+    }
+
+    .sidebar {
+        width: 70px;
+        padding: 0;
+    }
+
+    .nav-header {
+        display: none;
+    }
+
+    .nav-sidebar a {
+        text-align: center;
+        font-size: 12px;
+        text-decoration: none;
+        color: #00A6FB;
+        padding: 20px 10px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .carousel {
+        flex: none;
+        width: 100%;
+    }
+
+    .list-collapse {
+        flex-direction: column;
+    }
+
+
+
+    .display-button {
+        display: block;
+        flex: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 200px;
+    }
 }
